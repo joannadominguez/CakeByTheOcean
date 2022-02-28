@@ -1,15 +1,28 @@
+// SUMMER
+// Historical: Athens
+// Relaxing: Bahamas
+// Adventure: Egypt
+
+// WINTER
+// Historical: Edinburgh
+// Relaxing: Alaska
+// Adventure: Aspen
+
 function vacation() {
-  let season = prompt("Would you like to go on vacation in the Summer or Winter?","summer");
+  let season = prompt("When would you like to eat your cake? Summer or Winter?");
   
   if (season == null || season == "") {
-    alert("User cancelled the prompt.");
+    alert("Do you not want cake anymore?");
   } 
   else {
     season = season.toLowerCase();
       if (season === 'summer') {
         //ANOTHER PROMPT HERE ASKING FOR VIBE
-        let vibe = prompt("What kind of vibe are you looking for? Pick Historical, Relaxing, or Adventure.", " ");
-        vibe = vibe.toLowerCase();
+        let vibe = prompt("What kind of vibe are you looking for? Pick Historical, Relaxing, or Adventure.");
+        if (vibe == null || vibe == "") {
+          alert("Sorry to hear your PTO was cancelled!");
+        } else {vibe = vibe.toLowerCase();};
+
         if (vibe === 'historical') {
           alert('You\'d love Athens!')
         } else if (vibe === 'relaxing') {
@@ -20,8 +33,10 @@ function vacation() {
       } 
       else if (season === 'winter') {
         //PROMPT FOR VIBES
-        let vibe = prompt("what kind of vibe are you looking for? Pick Historical, Relaxing, or Adventure.", " ");
-        vibe = vibe.toLowerCase();
+        let vibe = prompt("what kind of vibe are you looking for? Pick Historical, Relaxing, or Adventure.");
+        if (vibe == null || vibe == "") {
+          alert("Sorry to hear your PTO was cancelled!");
+        } else {vibe = vibe.toLowerCase();};
         if (vibe === 'historical') {
           alert('You\'d love Edinburgh!')
         } else if (vibe === 'relaxing') {
